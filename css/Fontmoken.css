@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 300;
+  src: local("RobotoDraft Medium"), local("RobotoDraft-Medium"), url(https://fonts.gstatic.com/s/robotodraft/v1/u0_CMoUf3y3-4Ss4ci-VwXJuJo8UJJfpGKt7pXjBv4s.woff2) format("woff2"), url(https://fonts.gstatic.com/s/robotodraft/v1/u0_CMoUf3y3-4Ss4ci-VwaTA90I55Xt7owhZwpPnMsc.woff) format("woff");
+}
+p, button, span, table,th,td,tr, input,label,option,select,br,h1,h2,h3,h4,h5,h6,label,a,#logtbl_info,#step1,#step2,#step3,#step4,#step5,.btn,.col {
+  font-family: "RobotoDraft";
+}

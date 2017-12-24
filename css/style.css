@@ -1,0 +1,100 @@
+.buttstyle
+{
+	width: 30%;
+}
+/* Variables */
+
+$mainBgColor: #f2f2f2;
+$mainTextColor: #2C3E50;
+$accentColor: #673AB7;
+
+/* Mixins */
+
+
+/* Common */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $mainTextColor;
+  background-color: white;
+}
+
+
+/* App */
+
+.header {
+  padding: 30px 50px;
+  background-color: $mainBgColor;
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.tabContainer {
+  padding: 0 50px;
+  background-color: $mainBgColor;
+  box-shadow: 0 3px 5px 0 rgba(black, .2);
+  .tabs {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .tab {
+      display: block;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      cursor: pointer;
+      color: lighten($mainTextColor, 30);
+      .icon,
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 30px;
+      }
+      .text {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      &.active {
+        color: $accentColor;
+        font-weight: 300;
+      }
+    }
+    .indicator {
+      position: absolute;
+      bottom: 0;
+      height: 3px;
+      background: $accentColor;
+    }
+  }
+}
+
+.sectionsContainer {
+  padding: 30px 50px 0;
+  .sections {
+    .section {
+      display: none;
+      p {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .tabContainer .tabs .tab .text {
+    display: none;
+  }
+}
+
