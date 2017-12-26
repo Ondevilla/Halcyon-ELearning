@@ -276,7 +276,7 @@ if($sous['status']=='Pending')
 echo '
 
 
-<button style="width: 800%;background-color:#fdd835;"   id="'.$row1['moduleid'].'"  class="btn  btn-xs view_module"> '.$row1["modulename"].' </button><br>
+<button style="width: 80%;background-color:#fdd835;"   id="'.$row1['moduleid'].'"  class="btn  btn-xs view_module"> '.$row1["modulename"].' </button><br>
 
 ';
 }
